@@ -1,0 +1,5 @@
+# Compulsory line, this is a version 3 file
+version=3
+opts="pgpsigurlmangle=s/$/.sig/" \
+http://pkg-isocodes.alioth.debian.org/downloads/ \
+(?:|.*/)iso-codes(?:[_\-]v?|)(\d[^\s/]*)\.(?:tar\.xz|txz|tar\.bz2|tbz2|tar\.gz|tgz)

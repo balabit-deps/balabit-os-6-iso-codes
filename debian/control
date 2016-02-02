@@ -1,0 +1,25 @@
+Source: iso-codes
+Section: misc
+Priority: optional
+Maintainer: Dr. Tobias Quathamer <toddy@debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>, Alastair McKinstry <mckinstry@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: gettext, python
+Standards-Version: 3.9.6
+Homepage: http://pkg-isocodes.alioth.debian.org/
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-isocodes/pkg-iso-codes.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-isocodes/pkg-iso-codes.git
+
+Package: iso-codes
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Suggests: isoquery
+Description: ISO language, territory, currency, script codes and their translations
+ This package provides the ISO 639, ISO 639-3, and ISO 639-5 language
+ code lists, the ISO 4217 currency code list, the ISO 3166 territory
+ code list, the ISO 3166-2 sub-territory list, and the ISO 15924
+ script code list as XML files.
+ .
+ More importantly, it also provides their translations to be used by
+ other programs.
